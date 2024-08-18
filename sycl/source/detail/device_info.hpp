@@ -662,7 +662,7 @@ struct get_device_info_impl<
                           backend::opencl == CurrentBackend)) {
       auto MapArchIDToArchName = [](const int arch) {
         for (const auto &Item : IntelGPUArchitectures) {
-          if (Item.first == arch)
+          if ((Item.first & ~0xf) == (arch & ~0xf))
             return Item.second;
         }
         throw sycl::exception(
