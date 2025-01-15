@@ -63,7 +63,7 @@ if(SYCL_PI_UR_USE_FETCH_CONTENT)
   # Date:   Thu Mar 14 15:52:52 2024 +0100
   #     Merge pull request #1438 from PatKamin/disable-fuzztests
   #     Disable fuzz tests on ubuntu-22.04 runner
-  set(UNIFIED_RUNTIME_TAG 0d53eae6c9e17d0eb229f356b89e54c51421756a)
+  set(UNIFIED_RUNTIME_TAG a0256a2841cd2581cbeffc6e6458a69f54d1c89b)
 
   if(SYCL_PI_UR_OVERRIDE_FETCH_CONTENT_REPO)
     set(UNIFIED_RUNTIME_REPO "${SYCL_PI_UR_OVERRIDE_FETCH_CONTENT_REPO}")
