@@ -83,6 +83,14 @@ enum class architecture : uint64_t {
   intel_gpu_dg2_g12 = intel_gpu_acm_g12,
   intel_gpu_pvc = 0x000000030f000700,
   intel_gpu_pvc_vg = 0x000000030f400700,
+  intel_gpu_mtl_u = 0x0000000311800400,   // Meteor Lake U
+  intel_gpu_mtl_s = intel_gpu_mtl_u,      // Meteor Lake S
+  intel_gpu_arl_u = intel_gpu_mtl_u,      // Arrow Lake U
+  intel_gpu_arl_s = intel_gpu_mtl_u,      // Arrow Lake S
+  intel_gpu_mtl_h = 0x0000000311c00400,   // Meteor Lake H
+  intel_gpu_arl_h = 0x0000000312800400,   // Arrow Lake H
+  intel_gpu_bmg_g21 = 0x0000000500400400, // Battlemage G21
+  intel_gpu_lnl_m = 0x0000000501000400,   // Lunar Lake
   //
   // NVIDIA architectures
   //
